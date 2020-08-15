@@ -1,0 +1,10 @@
+public class Solution {
+    public String findDigitsInBinary(int A) {
+        StringBuilder sb = new StringBuilder();
+        while(A != 0){
+            sb.insert(0,A%2);
+            A = A/2;
+        }
+        return sb.toString();
+    }
+}
